@@ -15,7 +15,7 @@ app.use('/api/auth', authRoute);
 app.use('/api/posts', postRoute);
 
 
-mongoose.connect("mongodb+srv://admin:BHLJwzv0HZLRnm6d@userdata.jpimtm8.mongodb.net/socialmedia?retryWrites=true&w=majority&appName=userdata")
+mongoose.connect()
 .then(() => {
   console.log("connected to database!");
   app.listen(3000, () => {
